@@ -1,0 +1,27 @@
+# Dataset folder
+data/
+datasets/
+*.csv
+*.json
+*.parquet
+*.hdf5
+*.pkl
+*.pickle
+
+# Python environment & cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+env/
+venv/
+.env
+.venv
+.ipynb_checkpoints/
+venv310/
+ai/modelExperiments/sam_vit_b_01ec64.pth
+
+# IDEs and editors
+.vscode/
+.idea/
+.DS_Store

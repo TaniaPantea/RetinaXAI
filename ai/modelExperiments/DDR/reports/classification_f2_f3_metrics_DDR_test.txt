@@ -1,0 +1,39 @@
+Classification Metrics - DDR Test Set
+Model: EfficientNet-B0 custom head
+Model path: D:\licenta_Tania\outputs_ddr_effnetb0\models\best_effnetb0_ddr.pth
+Test CSV: D:\licenta_Tania\outputs_ddr_effnetb0\splits\test.csv
+Image dir: D:\licenta_Tania\DR_grading
+Image size: 512x512
+
+Accuracy: 0.8132
+F2 Macro: 0.7168
+F2 Weighted: 0.8170
+F3 Macro: 0.7403
+F3 Weighted: 0.8144
+
+Per-class F2 / F3:
+No DR: F2=0.8969, F3=0.8937
+Mild: F2=0.5163, F3=0.5550
+Moderate: F2=0.7616, F3=0.7504
+Severe: F2=0.6073, F3=0.7109
+Proliferative DR: F2=0.8021, F3=0.7914
+
+Classification report:
+                  precision    recall  f1-score   support
+
+           No DR     0.9238    0.8904    0.9068       940
+            Mild     0.3314    0.6000    0.4270        95
+        Moderate     0.8643    0.7396    0.7971       672
+          Severe     0.2804    0.8571    0.4225        35
+Proliferative DR     0.8992    0.7810    0.8359       137
+
+        accuracy                         0.8132      1879
+       macro avg     0.6598    0.7736    0.6779      1879
+    weighted avg     0.8588    0.8132    0.8291      1879
+
+Confusion matrix:
+[[837  64  39   0   0]
+ [ 24  57  14   0   0]
+ [ 43  50 497  71  11]
+ [  0   0   4  30   1]
+ [  2   1  21   6 107]]

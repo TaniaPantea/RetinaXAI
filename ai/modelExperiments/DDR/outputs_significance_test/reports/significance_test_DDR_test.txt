@@ -1,0 +1,29 @@
+====================================================================================================
+  TEST PERECHE Grad-CAM vs Grad-CAM++ vs X-Grad-CAM
+  Corectie Bonferroni: 3 comparatii -> prag semnificativ p < 0.0167
+====================================================================================================
+Deletion AUC        gradcam vs gradcampp  n= 100  dif medie=-0.0059  t p=0.3097  Wilcoxon p=0.5589  d=-0.102  -> gradcam  (semnificativ: nu)
+Deletion AUC        gradcam vs xgradcam   n= 100  dif medie=-0.0015  t p=0.6227  Wilcoxon p=0.7859  d=-0.049  -> gradcam  (semnificativ: nu)
+Deletion AUC      gradcampp vs xgradcam   n= 100  dif medie=+0.0044  t p=0.4175  Wilcoxon p=0.4535  d=+0.081  -> xgradcam  (semnificativ: nu)
+Insertion AUC       gradcam vs gradcampp  n= 100  dif medie=+0.0204  t p=0.0004  Wilcoxon p=0.0004  d=+0.369  -> gradcam  (semnificativ: DA)
+Insertion AUC       gradcam vs xgradcam   n= 100  dif medie=+0.0020  t p=0.5127  Wilcoxon p=0.8797  d=+0.066  -> gradcam  (semnificativ: nu)
+Insertion AUC     gradcampp vs xgradcam   n= 100  dif medie=-0.0184  t p=0.0012  Wilcoxon p=0.0000  d=-0.333  -> xgradcam  (semnificativ: DA)
+Fidelitate top5     gradcam vs gradcampp  n=1879  dif medie=+0.0120  t p=0.0000  Wilcoxon p=0.0000  d=+0.148  -> gradcam  (semnificativ: DA)
+Fidelitate top5     gradcam vs xgradcam   n=1879  dif medie=+0.0004  t p=0.8097  Wilcoxon p=0.5496  d=+0.006  -> gradcam  (semnificativ: nu)
+Fidelitate top5   gradcampp vs xgradcam   n=1879  dif medie=-0.0116  t p=0.0000  Wilcoxon p=0.0000  d=-0.132  -> xgradcam  (semnificativ: DA)
+Fidelitate top10    gradcam vs gradcampp  n=1879  dif medie=+0.0099  t p=0.0000  Wilcoxon p=0.0000  d=+0.116  -> gradcam  (semnificativ: DA)
+Fidelitate top10    gradcam vs xgradcam   n=1879  dif medie=-0.0013  t p=0.3857  Wilcoxon p=0.4750  d=-0.020  -> xgradcam  (semnificativ: nu)
+Fidelitate top10  gradcampp vs xgradcam   n=1879  dif medie=-0.0113  t p=0.0000  Wilcoxon p=0.0000  d=-0.128  -> xgradcam  (semnificativ: DA)
+Fidelitate top15    gradcam vs gradcampp  n=1879  dif medie=+0.0104  t p=0.0000  Wilcoxon p=0.0000  d=+0.113  -> gradcam  (semnificativ: DA)
+Fidelitate top15    gradcam vs xgradcam   n=1879  dif medie=-0.0045  t p=0.0102  Wilcoxon p=0.1224  d=-0.059  -> xgradcam  (semnificativ: nu)
+Fidelitate top15  gradcampp vs xgradcam   n=1879  dif medie=-0.0149  t p=0.0000  Wilcoxon p=0.0000  d=-0.155  -> xgradcam  (semnificativ: DA)
+Fidelitate top20    gradcam vs gradcampp  n=1879  dif medie=+0.0152  t p=0.0000  Wilcoxon p=0.0000  d=+0.171  -> gradcam  (semnificativ: DA)
+Fidelitate top20    gradcam vs xgradcam   n=1879  dif medie=+0.0037  t p=0.0386  Wilcoxon p=0.0260  d=+0.048  -> gradcam  (semnificativ: nu)
+Fidelitate top20  gradcampp vs xgradcam   n=1879  dif medie=-0.0115  t p=0.0000  Wilcoxon p=0.0000  d=-0.131  -> xgradcam  (semnificativ: DA)
+Stabilitate corr    gradcam vs gradcampp  n=1879  dif medie=+0.0011  t p=0.0000  Wilcoxon p=0.0000  d=+0.144  -> gradcam  (semnificativ: DA)
+Stabilitate corr    gradcam vs xgradcam   n=1879  dif medie=-0.0002  t p=0.1781  Wilcoxon p=0.0000  d=-0.031  -> xgradcam  (semnificativ: DA)
+Stabilitate corr  gradcampp vs xgradcam   n=1879  dif medie=-0.0014  t p=0.0000  Wilcoxon p=0.0000  d=-0.167  -> xgradcam  (semnificativ: DA)
+Stabilitate ssim    gradcam vs gradcampp  n=1879  dif medie=+0.0045  t p=0.0000  Wilcoxon p=0.0000  d=+0.206  -> gradcam  (semnificativ: DA)
+Stabilitate ssim    gradcam vs xgradcam   n=1879  dif medie=-0.0018  t p=0.0002  Wilcoxon p=0.0000  d=-0.087  -> xgradcam  (semnificativ: DA)
+Stabilitate ssim  gradcampp vs xgradcam   n=1879  dif medie=-0.0063  t p=0.0000  Wilcoxon p=0.0000  d=-0.254  -> xgradcam  (semnificativ: DA)
+====================================================================================================

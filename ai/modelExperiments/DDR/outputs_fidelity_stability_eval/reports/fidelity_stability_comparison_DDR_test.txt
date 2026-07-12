@@ -1,0 +1,52 @@
+Fidelity & Stability - COMPARATIE Grad-CAM vs Grad-CAM++ vs X-Grad-CAM
+Dataset: DDR | Split: test
+Model: EfficientNet-B0 custom head
+Model path: D:\licenta_Tania\outputs_ddr_effnetb0\models\best_effnetb0_ddr.pth
+Test CSV: D:\licenta_Tania\outputs_ddr_effnetb0\splits\test.csv
+Image dir: D:\licenta_Tania\DR_grading
+Samples: 1879
+Image size: 512x512
+Target layer: blocks[6]
+
+===== gradcam =====
+fidelity_top_5_mean: 0.2056
+fidelity_top_5_std:  0.1935
+fidelity_top_10_mean: 0.2629
+fidelity_top_10_std:  0.2088
+fidelity_top_15_mean: 0.2985
+fidelity_top_15_std:  0.2137
+fidelity_top_20_mean: 0.3274
+fidelity_top_20_std:  0.2146
+stability_corr_mean: 0.9883
+stability_corr_std:  0.0138
+stability_ssim_mean: 0.9436
+stability_ssim_std:  0.0347
+
+===== gradcampp =====
+fidelity_top_5_mean: 0.1936
+fidelity_top_5_std:  0.1961
+fidelity_top_10_mean: 0.2529
+fidelity_top_10_std:  0.2100
+fidelity_top_15_mean: 0.2881
+fidelity_top_15_std:  0.2150
+fidelity_top_20_mean: 0.3122
+fidelity_top_20_std:  0.2154
+stability_corr_mean: 0.9871
+stability_corr_std:  0.0139
+stability_ssim_mean: 0.9391
+stability_ssim_std:  0.0342
+
+===== xgradcam =====
+fidelity_top_5_mean: 0.2052
+fidelity_top_5_std:  0.1929
+fidelity_top_10_mean: 0.2642
+fidelity_top_10_std:  0.2094
+fidelity_top_15_mean: 0.3030
+fidelity_top_15_std:  0.2139
+fidelity_top_20_mean: 0.3237
+fidelity_top_20_std:  0.2157
+stability_corr_mean: 0.9885
+stability_corr_std:  0.0167
+stability_ssim_mean: 0.9453
+stability_ssim_std:  0.0359
+

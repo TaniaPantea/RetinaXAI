@@ -1,0 +1,16 @@
+streamlit==1.30.0
+streamlit-drawable-canvas==0.9.3
+
+
+torch>=2.0           # match the version that produced best_effnetb0_ddr.pth
+torchvision>=0.15
+timm>=0.9.0          # provides efficientnet_b0 used by build_model()
+
+
+opencv-python>=4.8
+numpy>=1.24,<2.0
+pandas>=2.0
+Pillow>=10.0
+scikit-image>=0.21   # SSIM (stability) + SLIC segmentation (insertion/deletion AUC)
+
+# sqlite3 is part of the Python standard library (no install needed).

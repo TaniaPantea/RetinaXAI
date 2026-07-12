@@ -1,0 +1,32 @@
+SLIC Insertion / Deletion AUC - COMPARATIE Grad-CAM vs Grad-CAM++ vs X-Grad-Cam
+Dataset: DDR | Split: test
+Model: EfficientNet-B0 custom head
+Model path: D:\licenta_Tania\outputs_ddr_effnetb0\models\best_effnetb0_ddr.pth
+Test CSV: D:\licenta_Tania\outputs_ddr_effnetb0\splits\test.csv
+Image dir: D:\licenta_Tania\DR_grading
+Max Samples: 100
+Image size: 512x512
+n_segments: 200
+Baseline: blur
+Target layer: blocks[6]
+
+Reminder: Deletion AUC mai MIC = mai bine; Insertion AUC mai MARE = mai bine.
+
+===== gradcam =====
+Deletion AUC Mean:  0.5324
+Deletion AUC Std:   0.1582
+Insertion AUC Mean: 0.8459
+Insertion AUC Std:  0.1247
+
+===== gradcampp =====
+Deletion AUC Mean:  0.5383
+Deletion AUC Std:   0.1618
+Insertion AUC Mean: 0.8256
+Insertion AUC Std:  0.1441
+
+===== xgradcam =====
+Deletion AUC Mean:  0.5339
+Deletion AUC Std:   0.1601
+Insertion AUC Mean: 0.8439
+Insertion AUC Std:  0.1283
+
